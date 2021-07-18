@@ -8,8 +8,8 @@ const logout = async () => {
   try {
     await projectAuth.signOut();
   } catch (err) {
-    error.value = err.message;
-    console.log(error.value);
+    console.log(err.message);
+    error.value = "Could not logout";
   }
 };
 

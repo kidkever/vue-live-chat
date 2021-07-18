@@ -19,8 +19,8 @@ const signup = async (email, password, displayName) => {
 
     return res;
   } catch (err) {
-    error.value = err.message;
-    console.log(error.value);
+    console.log(err.message);
+    error.value = "Could not complete the singup";
   }
 };
 

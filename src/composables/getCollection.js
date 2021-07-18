@@ -21,8 +21,8 @@ const getCollection = (collection) => {
     },
     (err) => {
       documents.value = null;
-      error.value = err.message;
-      console.log(error.value);
+      console.log(err.message);
+      error.value = "Could not fetch the data";
     }
   );
 
